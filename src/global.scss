@@ -24,3 +24,53 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.douradoTitulo{
+  font-size: 160px;
+   background: linear-gradient(to left,#9400D3 35%,#ffd700);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-style: italic;
+    text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		font-family: arial, sans-serif;
+}
+
+.douradoBotao{
+  background-color:#9400D3;
+  color:black;
+  background-size: contain;
+  text-align: center;
+  font-style: italic;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+
+.kiwiVariavel{
+  color:white;
+  font-family: arial;
+}
+
+.kiwiBotao{
+  background-color:#ffd700;
+  color:black;
+  text-align: center;
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.local input[type="text"], textarea {
+
+  background-color : gray;
+}
+
+.branco{
+  color:whitesmoke;
+  font-weight: bold;
+}
+.preto{
+  color:black;
+}

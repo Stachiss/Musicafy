@@ -4,13 +4,25 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  }
+    path: 'home',
+    loadChildren: () => import('./pages/home/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'cadastrar',
+    loadChildren: () => import('./pages/cadastrar/cadastrar.module').then( m => m.CadastrarPageModule)
+  },
+  {
+    path: 'detalhar',
+    loadChildren: () => import('./pages/detalhar/detalhar.module').then( m => m.DetalharPageModule)
+  },
+  {
+    path: 'conteudo',
+    loadChildren: () => import('./pages/conteudo/conteudo.module').then( m => m.ConteudoPageModule)
+  },
 ];
 
 @NgModule({
